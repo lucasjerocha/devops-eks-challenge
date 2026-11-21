@@ -1,0 +1,43 @@
+# Terraform working directory and downloaded providers/modules
+**/.terraform/**
+
+# Terraform state, plans, and crash output
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.plan
+crash.log
+crash.*.log
+
+# Local variable files may contain credentials or environment-specific values
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Local Terraform CLI configuration and overrides
+.terraformrc
+terraform.rc
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Common credential, environment, key, certificate, and cluster config files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.kubeconfig
+kubeconfig
+credentials
+credentials.*
+**/secrets/**
+
+# The upstream reference clone is not part of the selected local implementation
+/live-desafio-tech-01/

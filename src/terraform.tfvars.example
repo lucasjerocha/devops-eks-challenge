@@ -1,0 +1,13 @@
+aws_region                     = "us-east-1"
+aws_vpc_name                   = "example-vpc"
+aws_vpc_cidr                   = "10.0.0.0/16"
+aws_vpc_azs                    = ["us-east-1a", "us-east-1b"]
+aws_vpc_private_subnets        = ["10.0.1.0/24", "10.0.2.0/24"]
+aws_public_subnets             = ["10.0.101.0/24", "10.0.102.0/24"]
+aws_eks_name                   = "example-eks"
+aws_eks_version                = "REPLACE_WITH_A_CURRENTLY_SUPPORTED_VERSION"
+eks_managed_node_groups        = ["default"]
+aws_project_tags = {
+  Environment = "example"
+  Project     = "devops-eks-challenge"
+}
